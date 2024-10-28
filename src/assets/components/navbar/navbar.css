@@ -1,0 +1,120 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+nav .left{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+nav .right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav .right a:first-child{
+    color: var(--yellow);
+}
+
+nav .logo{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+nav .navs{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+nav .hamburger{
+    display: none;
+    gap: 4px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .hamburger div{
+    height: 2px;
+    width: 20px;
+    background-color: var(--white);
+}
+
+nav .closeNav{
+    display: none;
+}
+
+nav.responsiveNav{
+    height: calc(100vh - 118px);
+    width: calc(100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease .3s;
+    position: fixed;
+    left: 100vw;
+    background-color: var(--blue);
+    padding: 0;
+    z-index: 1;
+}
+
+nav.responsiveNav.active{
+    left: 0;
+}
+
+nav.responsiveNav .navs{
+    display: flex;
+    flex-direction: column;
+}
+
+nav.responsiveNav .navs a:nth-child(7){
+    color: var(--yellow);
+}
+
+@media(max-width:1068px){
+    nav a{
+        font-size: 15px;
+    }
+    nav .logo a{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:968px){
+    nav .left .navs{
+        display: none;
+    }
+
+    nav .right{
+        display: none;
+    }
+
+    nav .hamburger.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .closeNav.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 768px){
+    nav{
+        padding: 20px;
+    }
+}

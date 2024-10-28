@@ -1,0 +1,62 @@
+.spacing{
+    height: 80px;
+    width: 100vw;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.landing h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.landing p{
+    font-size: 13px;
+    text-align: center;
+    width: 70%;
+}
+
+@media(max-width:968px){
+    .landing p{
+        width: 85%;
+    }
+}
+
+@media(max-width: 768px){
+    .landing{
+        padding: 20px;
+    }
+
+    .landing h1{
+        font-size: 25px;
+    }
+
+    .landing p{
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 568px){
+    .landing p{
+        width: 95%;
+    }
+}
+
+@media(max-width: 368px){
+    .landing h1{
+        font-size: 20px;
+    }
+
+    .landing p{
+        font-size: 10px;
+    }
+}

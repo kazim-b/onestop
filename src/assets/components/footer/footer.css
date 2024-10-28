@@ -1,0 +1,116 @@
+footer{
+    padding: 40px;
+    border-top: var(--white) 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer > div .links{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div > h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer > div .links a{
+    text-decoration: none;
+    font-size: 14px;
+    gap: 5px;
+}
+
+footer .socialDiv{
+    align-items: start;
+}
+
+footer .socialDiv .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .socialDiv .socials > div{
+    display: flex;
+    gap: 15px;
+}
+
+footer .socialDiv .socials > div > div{
+    background-color: var(--grey);
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+}
+
+@media(max-width:868px){
+    footer .socialDiv .socials > div > div{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media(max-width:768px){
+    footer > div > h2{
+        font-size: 16px;
+    }
+    
+    footer > div .links a{
+        font-size: 11px;
+    }
+}
+
+@media(max-width:625px){
+    footer{
+        text-align: center;
+    }
+
+    footer > div{
+        flex: 0 0 50%;
+        /* OR flex-basis: 50% */
+    }
+
+    footer > div:nth-child(3), footer > div:nth-child(4){
+        margin-top: 30px;
+    }
+
+    footer .socialDiv{
+        align-items: center;
+    }
+}
+
+@media(max-width:468px){
+    footer .socialDiv .socials{
+        gap: 8px;
+    }
+
+    footer .socialDiv .socials > div{
+        gap: 8px;
+    }
+
+    footer .socialDiv .socials > div > div{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media(max-width:368px){
+    footer{
+        gap: 30px;
+    }
+
+    footer > div{
+        flex-basis: 100%;
+    }
+
+    footer > div:nth-child(3), footer > div:nth-child(4){
+        margin-top: 0;
+    }
+}

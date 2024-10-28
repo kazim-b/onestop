@@ -1,0 +1,42 @@
+.adBig, .adMid, .adSmall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adBig div h1, .adMid div h1, .adSmall div h1{
+    color: var(--blue);
+}
+
+.adBig div{
+    height: 500px;
+    background: var(--grey);
+    margin: 80px 0;
+    border-radius: 6px;
+    width: calc(100vw - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adMid div{
+    height: 400px;
+    background: var(--grey);
+    margin: 80px 0;
+    border-radius: 6px;
+    width: calc(100vw - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adSmall div{
+    height: 200px;
+    background: var(--grey);
+    margin: 40px 0;
+    border-radius: 6px;
+    width: calc(100vw - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

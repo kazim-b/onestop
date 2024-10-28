@@ -1,0 +1,89 @@
+.categoryContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.productRow{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productBox{
+    width: 180px;
+    height: 180px;
+    background: var(--white);
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 0 0 180px;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adSmall > div{
+    margin: 0;
+}
+
+/* Pagination */
+
+.pagination{
+    display: flex;
+    gap: 15px;
+}
+
+.pagination button{
+    background: var(--yellow);
+    color: var(--blue);
+    border: 1px solid var(--yellow);
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.pagination button.clicked{
+    background: none;
+    color: var(--yellow);
+}
+
+@media(min-width: 1140px){
+    .productRow{
+        gap: 95px;
+    }
+}
+
+@media(min-width: 1360px){
+    .productRow{
+        gap: 40px;
+    }
+}
+
+@media(min-width: 1580px){
+    .productRow{
+        gap: 80px;
+    }
+}
+
+@media(min-width: 1820px){
+    .productRow{
+        gap: 100px;
+    }
+}
